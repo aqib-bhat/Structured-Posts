@@ -13,5 +13,6 @@ document.getElementById("structureIt").addEventListener("click", async () => {
   });
   let response = await summarizerAPI.summarize(inputThoughtsToPost);
 
-  outputStructured.textContent = response;
+  const markdownConverter = new showdown.Converter();
+  outputStructured.textContent = markdownConverter.makeHtml(response);
 });
