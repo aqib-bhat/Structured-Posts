@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>Structured-Posts</title>
-  <style>
-    body {
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      width: 500px;
-      height: auto;
-      background-color: bisque;
-      font-size: medium;
-    }
-    button { 
-      background-color: darkolivegreen;
-      color: aliceblue;
-     }
-    div { margin-top: 10px; margin-bottom: 10px;}
-  </style>
-</head>
-<body>
-  <h1><i>Structured Posts</i></h1>
+  <head>
+    <meta charset="utf-8" />
+    <title>Structured-Posts</title>
+    <style>
+      body {
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        width: 500px;
+        height: auto;
+        background-color: bisque;
+        font-size: medium;
+      }
+      button {
+        background-color: darkolivegreen;
+        color: aliceblue;
+      }
+      div {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1><i>Structured Posts</i></h1>
 
-  <input id="thoughtsToPost" placeholder="Thoughts to post"></input>
+    <textarea
+      id="thoughtsToPost"
+      rows="5"
+      cols="70"
+      placeholder="Thoughts to post"
+    ></textarea>
+    <br />
 
-  <button id="structureIt">Make it structured!</button>
+    <button id="structureIt">Make it structured!</button>&nbsp;&nbsp;&nbsp;
 
-  <div id="outputStructured" placeholder="Your thoughts transformed to structured posts"></div>
+    <div
+      id="outputStructured"
+      placeholder="Your thoughts transformed to structured posts"
+    ></div>
 
-  <script src="popup.js"></script>
-</body>
+    <script src="popup.js"></script>
+  </body>
 </html>
