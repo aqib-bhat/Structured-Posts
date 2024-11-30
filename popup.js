@@ -4,12 +4,9 @@ document.getElementById("structureIt").addEventListener("click", async () => {
 
   outputStructured.textContent = "Getting results ...";
   const rewriterApi = await ai.rewriter.create({
-    tone: "as-is",
-    format: "markdown",
     sharedContext:
-      "I have some thoughts on my mind that I want to share in an email or chat." +
-      "For each text I submit, rewrite it as bullet points with the following sections: " +
-      "Background, Updates, Questions, Action Items, TLDR",
+      "Rewrite the given text with the following sections: " +
+      "Background, Updates, Questions, Action Items, tl;dr",
   });
   let response = await rewriterApi.rewrite(inputThoughtsToPost);
 
