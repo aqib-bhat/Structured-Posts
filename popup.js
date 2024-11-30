@@ -14,5 +14,5 @@ document.getElementById("structureIt").addEventListener("click", async () => {
   let response = await summarizerAPI.summarize(inputThoughtsToPost);
 
   const markdownConverter = new showdown.Converter();
-  outputStructured.textContent = markdownConverter.makeHtml(response);
+  outputStructured.innerHTML = markdownConverter.makeHtml(response);
 });
