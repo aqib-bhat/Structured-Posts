@@ -3,9 +3,9 @@ document.getElementById("structureIt").addEventListener("click", async () => {
   const outputStructured = document.getElementById("outputStructured");
 
   outputStructured.textContent = "Getting results ...";
-  const summarizerAPI = await ai.summarize.create({
-    type: "text",
-    length: "shorter",
+  const summarizerAPI = await ai.summarizer.create({
+    type: "key-points",
+    length: "short",
     format: "markdown",
     sharedContext:
       "Summarize the given text with the following sections: " +
